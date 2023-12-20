@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operators in C-language</title>
+    <style>
+        th{
+            background-color:orange;
+        }
+        h2{
+            text-align:right;
+            color:green;   
+        }
+        h3{
+            color:tomato;
+        }
+        b{
+            background-color:pink;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Mail for any query or doubt</h1>
+    <a href="mailto: pandeykaushal11a@gmail.com">pandeykaushal11a@gmail.com</a><br><br>
+    
+    <h2 id="operators">operators</h2>
+        <p>In the C programming language, operators are symbols that perform operations on variables and values. Each operator serves a specific purpose in manipulating data and controlling program flow.</p><br>        
+        
+        <h3>Arithmatical Operators</h3>
+        <p>In C programming, arithmetic operators perform mathematical operations on variables and values.<dl><dt><b>Addition (+):</b> Adds two operands.</dt><dd>int sum = a + b;</dd><dt><b>Subtraction (-):</b> Subtracts the right operand from the left operand.</dt><dd>int difference = a - b;</dd><dt><b>Multiplication (*):</b> Multiplies two operands.</dt><dd>int product = a * b;</dd><dt><b>Division (/):</b> Divides the left operand by the right operand.</dt><dd>float quotient = (float)a / b; // Ensure one operand is float for accurate division.</dd><dt><b>Modulus (%):</b> Returns the remainder of the division of the left operand by the right operand.</dt><dd>int remainder = a % b;</dd></dl></p>
+        <table border="5px double green" cellspacing="0" cellpadding="10" style="text-align:center;" id="arithmaticalOperators">
+            <tr>
+                <th style="background-color:aqua;" colspan="2">Arithmatical Operators</th>
+            </tr>
+            <tr>
+                <th>operators</th>
+                <th>function</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>addition</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>subtraction</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>multiplication</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>division</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>modulas(remainder)</td>
+            </tr>
+        </table><hr><hr><br>
+        
+        <h3>Unary Operators</h3>
+        <p>Unary operators works on a single operand<mark>( means variable)</mark>There are two type of unary operator in C-language.<dt><dt><b>Increment (++):</b> Increases the value of the operand by 1.</dt><dd>a++;</dd><b>Decrement (--):</b> Decreases the value of the operand by 1.</dt><dd>b--;</dd></dl></p>
+        <table border="5px double green" cellspacing="0" cellpadding="10" style="text-align:center;" id="unaryOperators">
+            <tr>
+                <th style="background-color:aqua;" colspan="5">unary Operators</th>
+            </tr>
+            <tr>
+                <th>operators</th>
+                <th>function</th>
+                <th colspan="2">syntax</th>
+                <th>reality</th>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>increment by 1</td>
+                <td>A++</td>
+                <td>++A</td>
+                <td>A=A+1</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>decrement by 1</td>
+                <td>A--</td>
+                <td>--A</td>
+                <td>A=A-1</td>
+            </tr>            
+        </table><hr><hr><br>
+        
+        <h3>Assignment Operators</h3>
+        <p>In C programming, the assignment operators is used to assign a value to the variable.<dl><dt><b>Simple Assignment (=):</b> Assigns the value on the right to the variable on the left.</dt><dd>int x = 5;</dd><dt><b>Addition Assignment (+=):</b> Adds the value on the right to the variable on the left.</dt><dd>x += 3; // Equivalent to x = x + 3;</dd><dt><b>Subtraction Assignment (-=):</b> Subtracts the value on the right from the variable on the left.</dt><dd>x -= 2; // Equivalent to x = x - 2;</dd><dt><b>Multiplication Assignment (*=):</b> Multiplies the variable on the left by the value on the right.</dt><dd>x *= 4; // Equivalent to x = x * 4;</dd><dt><b>Division Assignment (/=):</b> Divides the variable on the left by the value on the right.</dt><dd>x /= 2; // Equivalent to x = x / 2;</dd><dt><b>Modulus Assignment (%=):</b> Computes the modulus of the variable on the left by the value on the right.</dt><dd>x %= 3; // Equivalent to x = x % 3;</dd></dl></p>
+        <table border="5px double green" cellspacing="0" cellpadding="10" style="text-align:center;" id="assignmentOperators">
+            <tr>
+                <th style="background-color:aqua;" colspan="3">Assignment Operators</th>
+            </tr>
+            <tr>
+                <th>operators</th>
+                <th>function</th>
+                <th>reality</th>
+            </tr>
+            <tr>
+                <td>=</td>
+                <td>for assigning value</td>
+                <td>A = B</td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>first addition then assign value</td>
+                <td>A=A+B</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>first subtraction then assign</td>
+                <td>A=A-B</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>first multiplication then assign</td>
+                <td>A=A*B</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>first division then assign</td>
+                <td>A=A/B</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>first modulas(remainder) then assign</td>
+                <td>A=A%B</td>
+            </tr>
+        </table><hr><hr><br>
+        
+        <h3>Relational Operators</h3>
+        <p>In C, relational operators are used to compare values.<br><b>Equal to (==):</b> Checks if two values are equal. <br><b>Not equal to (!=):</b> Checks if two values are not equal. <br><b>Greater than (>):</b> Checks if the left operand is greater than the right operand. <br><b>Less than (<):</b> Checks if the left operand is less than the right operand. <br><b>Greater than or equal to (>=):</b> Checks if the left operand is greater than or equal to the right operand. <br><b>Less than or equal to (<=):</b> Checks if the left operand is less than or equal to the right operand. </p>
+        <table border="5px double green" cellspacing="0" cellpadding="10" style="text-align:center;" id="relationalOperators">
+            <tr>
+                <th style="background-color:aqua;" colspan="3">Relational Operators</th>
+            </tr>
+            <tr>
+                <th>operators</th>
+                <th>function</th>
+                <th>reality</th>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>equal to</td>
+                <td>A == B</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>not equal to</td>
+                <td>A != B</td>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>greater than</td>
+                <td>A > B</td>
+            </tr>
+            <tr>
+                <td><</td>
+                <td>less than</td>
+                <td>A < B</td>
+            </tr>
+            <tr>
+                <td>>=</td>
+                <td>greater than or equal to</td>
+                <td>A >= B</td>
+            </tr>
+            <tr>
+                <td><=</td>
+                <td>less than or equal to</td>
+                <td>A <= B</td>
+            </tr>
+        </table><hr><hr><br>
+        
+        <h3>Ternary or Conditional Operators</h3>
+        <p>In C, the ternary operator is a shorthand way of writing an if-else statement. <dl><dt>Its syntax is:</dt><dd><b>condition ? expression_if_true : expression_if_false;</b></dd></dl> </p>
+        <table border="5px double green" cellspacing="0" cellpadding="10"  style="text-align:center;" id="ternaryOperators">
+            <tr>
+                <th style="background-color:aqua;">ternary Operator</th>
+            </tr>
+            <tr>
+                <td>condition <mark>?</mark> value_if_true <mark>:</mark> value_if_false;</td>
+            </tr>
+            <tr>
+                <th></th>
+            </tr>
+        </table><hr><hr><br>
+        
+        <h3>Logical Operators</h3>
+        <p>In C, logical operators are used to perform logical operations on boolean values (true or false). <dl><dt><b>&& (Logical AND):</b> Returns true if both operands are true.</dt><dd>if (x && y) {
+    // Code executes if both x and y are true
+}</dd><dt><b>|| (Logical OR):</b> Returns true if at least one operand is true.</dt><dd>if (x || y) {
+    // Code executes if either x or y is true
+}</dd><dt><b>! (Logical NOT):</b> Returns true if the operand is false, and false if the operand is true.</dt><dd>if (!x) {
+    // Code executes if x is false
+}</dd></dl> </p>
+        <table border="5px double green" cellspacing="0" cellpadding="10"  style="text-align:center;" id="logicalOperators">
+            <tr>
+                <th style="background-color:aqua;" colspan="4">logical Operators</th>
+            </tr>
+            <tr>
+                <th>operators</th>
+                <th>function</th>
+                <th>reality</th>
+                <th>description</th>
+            </tr>
+            <tr>
+                <td>&&</td>
+                <td>logical AND</td>
+                <td> A && B</td>
+                <td>if all conditions are true</td>
+            </tr>
+            <tr>
+                <td>||</td>
+                <td>logical OR</td>
+                <td> A || B</td>
+                <td>if any condition is true</td>
+            </tr>
+            <tr>
+                <td>!</td>
+                <td>logical NOT</td>
+                <td>!(condition)</td>
+                <td>if the given condition is not true</td>
+            </tr>   
+        </table><hr><hr><br>
+</body>
+</html>
